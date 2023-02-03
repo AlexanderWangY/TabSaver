@@ -22,3 +22,8 @@ button {
     border-radius: .8vw;
     color: white;
 }
+
+button:hover {
+    background-color: rgb(75, 0, 75);
+    cursor: pointer;
+}
