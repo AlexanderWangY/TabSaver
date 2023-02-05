@@ -2,6 +2,7 @@
     "manifest_version": 3,
     "version": "1.0",
     "name": "Leads Tracker",
+    "description": "A very simple extension to save tabs and links",
     "action": {
         "default_popup": "index.html",
         "default_icon": "iconSmile.png"
