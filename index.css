@@ -27,3 +27,8 @@ button:hover {
     background-color: rgb(75, 0, 75);
     cursor: pointer;
 }
+
+ul {
+    height: fit-content;
+    width: 100%;
+}

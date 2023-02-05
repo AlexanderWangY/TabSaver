@@ -1,15 +1,26 @@
-/*let myLeads = [];
+let myLeads = [];
 const inputEl = document.getElementById('input-el');
 let inputBtn = document.getElementById('input-btn');
+const ulEl = document.getElementById('ul-el');
 
-inputBtn.addEventListener('click', (e) => {
-    myLeads.push("www.google.com");
-
-});*/
-
-const add = (a, b) => a + b + 100;
-const a = 10;
-const b = 20;
+inputBtn.addEventListener('click', function() {
+    myLeads.push(inputEl.value);
+    inputEl.value = '';
+    renderLeads();
+});
 
 
-console.log(add(a, b));
+function renderLeads() {
+    let listItems = "";
+for (let i = 0; i < myLeads.length; i++) {
+    //listItems += "<li> <a target='_blank' href=' https://" + myLeads[i] + " '>" + myLeads[i] + "</a></li>";
+    listItems += `
+    <li>
+        <a target='_blank' href='${myLeads[i]}'>
+            ${myLeads[i]}
+        </a>
+    </li>
+    `
+};
+ulEl.innerHTML = listItems;
+};
